@@ -11,4 +11,7 @@
         <h1>Hello World!</h1>
         <p>This is the homepage!</p>
     </body>
+    <form action="hi">
+        Name: <input type="text" name="name"> <input type="submit" value="Submit">
+    </form>
 </html>
