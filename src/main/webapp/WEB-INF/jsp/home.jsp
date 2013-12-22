@@ -14,4 +14,10 @@
     <form action="hi">
         Name: <input type="text" name="name"> <input type="submit" value="Submit">
     </form>
+    
+
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<h1>Page with image</h1>
+<!-- use c:url to get the correct absolute path -->
+<img src="<c:url value="/resources/img/titan_fall.jpg" />" />
 </html>

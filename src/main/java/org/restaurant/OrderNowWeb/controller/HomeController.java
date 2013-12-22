@@ -14,11 +14,17 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class HomeController {
 
+//	@RequestMapping(value = "/")
+//	public ModelAndView test(HttpServletResponse response) throws IOException {
+//		return new ModelAndView("home");
+//	}
+
 	@RequestMapping(value = "/")
 	public ModelAndView test(HttpServletResponse response) throws IOException {
-		return new ModelAndView("home");
+		
+		return new ModelAndView("hello");
 	}
-
+	
 	@RequestMapping(value = "/hi", method = RequestMethod.GET)
 	public String hi(@RequestParam("name") String name, Model model) {
 		String message = "Hi " + name + "!";
